@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0; /* Pour supprimer les marges par défaut */
+}
+body {
+  font-family: "Embed", sans-serif;
+  background-color: #110;
+  color: #fff;
+}
+
+form,
+#weather {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  border-bottom: 2px solid #888;
+  font-size: 1.2rem;
+  padding: 5px 0;
+}
+
+input[type="text"]:focus {
+  border-color: #ff521f;
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+ul li {
+  background-color: #333;
+  margin-top: 2px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+ul li span {
+  color: #777;
+}
+#degrees {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+#city {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  background: linear-gradient(rgb(255, 60, 0), orange);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+button#change {
+  border: 2px solid #888;
+  background-color: transparent;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+div.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.info h3 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+div.info .value {
+  font-size: 2rem;
+}
+div.info .value span {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+#icon {
+  margin-bottom: -16px;
+}

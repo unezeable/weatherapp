@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bam.css" />
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="search city" />
+      <ul></ul>
+    </form>
+    <div id="weather" style="display:none">
+      <img src="" alt="" id="icon" />
+      <h1 id="degrees">20&deg</h1>
+      <h2 id="city">Paris</h1>
+      <button id="change">change city</button>
+      <div class="info">
+        <div>
+          <h3>Wind</h3>
+          <div  id='WindValue' class="value">2<span>km/h</span></div>
+        </div>
+        <div>
+          <h3>Ressentit</h3>
+          <div id='RessentitValue' class="value">2<span>km/h</span></div>
+        </div>
+        <div>
+          <h3>Humidité</h3>
+          <div id='humiditéValue' class="value">2<span>km/h</span></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"
+      integrity="sha256-qXBd/EfAdjOA2FGrGAG+b3YBn2tn5A6bhz+LSgYD96k="
+      crossorigin="anonymous"
+    ></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
